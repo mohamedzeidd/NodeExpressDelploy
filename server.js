@@ -6,11 +6,11 @@ app.use("/", (req, res) => {
   res.json({ route: "Home", data: "Sample Data" });
 });
 
-app.use("/about", (req, res) => {
+app.get("/about", (req, res) => {
   res.json({ route: "About", data: "Sample Data" });
 });
 
-app.use("/contact", (req, res) => {
+app.get("/contact", (req, res) => {
   res.json({ route: "Contact", data: "Sample Data" });
 });
 
